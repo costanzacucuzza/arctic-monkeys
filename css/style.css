@@ -26,7 +26,7 @@ a {
 }
 
 section {
-	min-height: 100vh;
+	min-height: 55vh;
 }
 
 h1 {
@@ -58,7 +58,7 @@ p {
 }
 
 .container {
-	padding: 6rem 10rem;
+	padding: 4rem 1rem;
 }
 
 .cleaner {
@@ -93,10 +93,7 @@ header h1:hover {
 }
 
 nav {
-	display: block;
-	float: right;
-	margin-right: 2rem;
-	margin-top: 3rem;
+	display: none;
 }
 
 
@@ -174,55 +171,52 @@ nav {
 	background-color: grey;
 }
 
-#about article {
-	margin-bottom: 5rem;
-}
-
-#about .column {
-	float: left;
-	width: calc(25% - 2.5rem);
-	margin-right: 2.5rem;
+#about h2 {
 	text-align: center;
-	padding: 0.5rem;
-	margin-top: 3rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
 }
 
-#about .column h3 {
-	font-size: 2.5rem;
-	margin: 0 0 0.8rem 0;
+.column {
+	text-align: center;
+	padding: 0rem 1rem;
+    margin-top: 3rem;
 }
 
-#about .column h4 {
+.column h3 {
 	font-size: 2rem;
-	margin-bottom: 2rem;
+	margin: 0 0 0.3rem 0;
 }
 
-#about .column p {
-	font-size: 1.7rem;
-	margin: 0;
-	line-height: 2.2rem;
+.column h4 {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
 }
 
-#about .column .last{
+.column p {
+	font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.8rem;
+}
+
+.column .last{
 	margin-right: 0;
 }
 
 .circle-image {
-	width: 20rem;
-	height: 20rem;
+	width: 15rem;
+    height: 15rem;
 	border-radius: 50%;
 	overflow: hidden;
 	margin: auto;
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54);
-	margin-bottom: 2.5rem;
+	margin-bottom: 1rem;
 }
 
 .circle-image img {
 	width: 100%;
 	height: 100%;
 }
-
-
 
 .arrow-up {
 	color: rgba(0, 0, 0, 0.87);
@@ -247,4 +241,84 @@ nav {
 .arrow-up:hover {
 	transform: scale(1.1);
 	opacity: 0.9;
+}
+
+/*MEDIA*/
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+	#about h2 {
+		font-size: 4rem;
+		margin-bottom: 3rem;
+	}
+	.column {
+		padding: 1rem 3rem;
+    	margin: 0 0rem 3rem 0;
+    	width: 50%;
+    	float: left;
+	}
+	.column h3 {
+		font-size: 2.5rem;
+		margin: 0 0 0.8rem 0;
+	}
+	.column h4 {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+	.column p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	.circle-image {
+		width: 17rem;
+		height: 17rem;
+		margin-bottom: 2.5rem;
+	}
+ 	.container {
+		padding: 4rem 3rem;
+	}
+	section {
+		min-height: 100vh;
+	}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1200px) {
+	#header nav {
+		display: block;
+		float: right;
+		margin-right: 2rem;
+		margin-top: 3rem;
+	}
+	#about h2 {
+		font-size: 5rem;
+		margin-bottom: 2rem;
+	}
+	.column {
+	    float: left;
+		width: calc(25% - 2.5rem);
+		padding: 0.5rem;
+		margin: 3rem 2.5rem 0 0;
+	}
+	.circle-image {
+		width: 20rem;
+		height: 20rem;
+		margin-bottom: 2.5rem;
+	}
+	.column h3 {
+		font-size: 2.5rem;
+		margin: 0 0 0.8rem 0;
+	}
+	.column h4 {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+	.column p {
+		font-size: 1.7rem;
+		line-height: 2.4rem;
+		padding: 0;
+	}
+	.container {
+		padding: 6rem 10rem 8rem 10rem;
+	}
 }
