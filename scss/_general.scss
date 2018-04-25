@@ -1,0 +1,63 @@
+/*GENERAL*/
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+* {
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    padding: 0;
+}
+
+a {
+    color: rgba(102, 0, 102, 0.9);
+}
+
+section {
+    min-height: 55vh;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3.8rem;
+    color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 1rem;
+}
+
+h3,
+h4 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: rgba(0, 0, 0, 0.84);
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.container {
+    padding: 4rem 1rem;
+}
+
+.cleaner {
+    clear: both;
+}
