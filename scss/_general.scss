@@ -10,7 +10,7 @@ body {
 }
 
 * {
-    color: rgba(0, 0, 0, 0.8);
+    color: white;
     margin: 0;
     box-sizing: border-box;
     font-size: 1.6rem;
@@ -19,10 +19,6 @@ body {
 
 a {
     color: rgba(102, 0, 102, 0.9);
-}
-
-section {
-    min-height: 55vh;
 }
 
 h1 {
@@ -54,7 +50,13 @@ p {
     font-size: 1.8rem;
 }
 
+ul,
+ol {
+    list-style: none;
+}
+
 .container {
+    overflow: hidden;
     padding: 4rem 1rem;
 }
 

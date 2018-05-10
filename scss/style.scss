@@ -85,6 +85,7 @@ nav {
 /*HOME*/
 
 #home {
+    min-height: 100vh;
     background-image: url("../img/bg-home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -171,5 +172,27 @@ nav {
     &:hover {
         transform: scale(1.1);
         opacity: 0.9;
+    }
+}
+
+
+/*NEWS*/
+
+
+/*DISCOGRAFIA*/
+
+#discography {
+    overflow: hidden;
+    background-color: grey;
+    .album {
+        @include clearfix();
+        display: inline-block;
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+    img {
+        height: 250px;
+        width: 250px;
     }
 }

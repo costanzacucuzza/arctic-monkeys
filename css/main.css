@@ -7,7 +7,7 @@ body {
   background-color: black; }
 
 * {
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
   margin: 0;
   box-sizing: border-box;
   font-size: 1.6rem;
@@ -15,9 +15,6 @@ body {
 
 a {
   color: rgba(102, 0, 102, 0.9); }
-
-section {
-  min-height: 55vh; }
 
 h1 {
   font-family: 'Rubik', sans-serif;
@@ -44,7 +41,12 @@ h4 {
 p {
   font-size: 1.8rem; }
 
+ul,
+ol {
+  list-style: none; }
+
 .container {
+  overflow: hidden;
   padding: 4rem 1rem; }
 
 .cleaner {
@@ -76,9 +78,7 @@ p {
     height: 17rem;
     margin-bottom: 2.5rem; }
   .container {
-    padding: 4rem 3rem; }
-  section {
-    min-height: 100vh; } }
+    padding: 4rem 3rem; } }
 
 /* Desktop Styles */
 @media only screen and (min-width: 1200px) {
@@ -178,6 +178,7 @@ nav {
 
 /*HOME*/
 #home {
+  min-height: 100vh;
   background-image: url("../img/bg-home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -252,3 +253,21 @@ nav {
   .arrow-up:hover {
     transform: scale(1.1);
     opacity: 0.9; }
+
+/*NEWS*/
+/*DISCOGRAFIA*/
+#discography {
+  overflow: hidden;
+  background-color: grey; }
+  #discography .album {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    padding: 10px; }
+    #discography .album:after {
+      display: block;
+      content: '';
+      clear: both; }
+  #discography img {
+    height: 250px;
+    width: 250px; }
