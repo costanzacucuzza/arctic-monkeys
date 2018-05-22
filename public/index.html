@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Arctic Monkeys</title>
     <link rel="stylesheet" href="./css/main.min.css">
@@ -14,19 +15,25 @@
 <body>
     <header id="header">
         <h1>AM</h1>
-        <nav>
-            <ul class="main-nav">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a>
-                    <!-- <ul class="secondary-nav">
-                        <li>la banda</li>
-                        <li>integrantes</li>
-                    </ul> -->
-                </li>
-                <li><a href="#discography">discografia</a></li>
-                <li><a href="#news">noticias</a></li>
+
+        <div class="menu-header">
+            <nav class="nav-header">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#discography">discografia</a></li>
+                    <li><a href="#news">noticias</a></li>
+                    <li><a href="#gallery">galeria</a></li>
+                </ul>
+            </nav>
+            <ul class="social">
+                <li><a href="http://smarturl.it/ArcticFB" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="http://smarturl.it/ArcticTW" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="http://smarturl.it/ArcticIN" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="http://smarturl.it/ArcticSP" target="_blank"><i class="fab fa-spotify"></i></a></li>
+                <li><a href="https://smarturl.it/ArcticYT" target="_blank"><i class="fab fa-youtube"></i></a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
     <main>
@@ -45,34 +52,39 @@
                 <div>
                     <div class="title-box">
                         <h2 class="title">Miembros</h2>
+                        <p>Arctic Monkeys es una banda británica de indie rock, formada en Sheffield, Reino Unido.​ </p>
                     </div>
                     <div class="column">
-                        <div class="member-image">
-                            <img src="./img/alex-turner.jpg" alt="">
+                        <div class="member-image thumb" style="background-image: url(./img/5.jpg);">
+                            <div class="text">
+                                <h3>Alex Turner</h3>
+                                <h4>Vocalista</h4>
+                            </div>
                         </div>
-                        <h3>Alex Turner</h3>
-                        <h4>Vocalista</h4>
                     </div>
                     <div class="column">
-                        <div class="member-image">
-                            <img src="./img/matt-helders.jpg" alt="">
+                        <div class="member-image thumb" style="background-image: url(./img/4.jpg);">
+                            <div class="text">
+                                <h3>Matt Helders</h3>
+                                <h4>Baterista</h4>
+                            </div>
                         </div>
-                        <h3>Matt Helders</h3>
-                        <h4>Baterista</h4>
                     </div>
                     <div class="column">
-                        <div class="member-image">
-                            <img src="./img/jamie-cook.jpg" alt="">
+                        <div class="member-image thumb" style="background-image: url(./img/1.jpg);">
+                            <div class="text">
+                                <h3>Jamie Cook</h3>
+                                <h4>Guitarrista</h4>
+                            </div>
                         </div>
-                        <h3>Jamie Cook</h3>
-                        <h4>Guitarrista</h4>
                     </div>
                     <div class="column last">
-                        <div class="member-image">
-                            <img src="./img/nick-omalley.jpg" alt="">
+                        <div class="member-image thumb" style="background-image: url(./img/2.jpg);">
+                            <div class="text">
+                                <h3>Nick O'Malley</h3>
+                                <h4>Bajista</h4>
+                            </div>
                         </div>
-                        <h3>Nick O'Malley</h3>
-                        <h4>Bajista</h4>
                     </div>
                 </div>
                 <!-- <div class="cleaner"></div> -->
@@ -124,72 +136,116 @@
                 <div class="title-box">
                     <h2 class="title">Discografía</h2>
                 </div>
-                <div class="album-thumb">
-                    <img src="./img/whatever.jpg" alt="Tapa de disco Animals">
-                    <div class="album-hover">
-                        <h4>Whatever People Say I Am, That's What I'm Not</h4>
-                        <span>2006</span>
-                    </div>
-                </div>
-                <div class="album-thumb">
-                    <img src="./img/humbug.jpg" alt="Tapa de disco">
-                    <div class="album-hover">
-                        <h4>Humbug</h4>
-                        <span>2009</span>
-                    </div>
 
-                </div>
-                <div class="album-thumb">
-                    <img src="./img/suckit.png" alt="Tapa de disco">
-                    <div class="album-hover">
-                        <h4>Suck It and See</h4>
-                        <span>2011</span>
+                <div class="albums">
+                    <div class="album thumb" style="background-image: url(./img/whatever.jpg);">
+                        <div class="album-text">
+                            <h4>Whatever People Say I Am, That's What I'm Not</h4>
+                        </div>
+                        <a href="https://open.spotify.com/album/50Zz8CkIhATKUlQMbHO3k1?si=yW9b-0zaTcaSUANkU5Blow" target="_blank"><img src="img/spotify_button.png" alt=""></a>
+                    </div>
+                    <div class="album thumb" style="background-image: url(./img/nightmare.jpg);">
+                        <div class="album-text">
+                            <h4>Favourite Worst Nightmare</h4>
+                        </div>
+                        <a href="https://open.spotify.com/album/1XkGORuUX2QGOEIL4EbJKm?si=MUS3EC4LS-OfCiSSDn2AmQ" target="_blank"><img src="img/spotify_button.png" alt=""></a>
+                    </div>
+                    <div class="album thumb" style="background-image: url(./img/humbug.jpg);">
+                        <div class="album-text">
+                            <h4>Humbug</h4>
+                        </div>
+                        <a href="https://open.spotify.com/album/5IEoiwkThhRmSMBANhpxl2?si=3FvHI9jFS3SOuHOx4PX9gg" target="_blank"><img src="img/spotify_button.png" alt=""></a>
+                    </div>
+                    <div class="album thumb" style="background-image: url(./img/suckit.png);">
+                        <div class="album-text">
+                            <h4>Suck It and See</h4>
+                        </div>
+                        <a href="https://open.spotify.com/album/2ym2jcqckXqWeTDoxz3Kst?si=ktbewUjFSOeiVh5hoB6Sxw" target="_blank"><img src="img/spotify_button.png" alt=""></a>
+                    </div>
+                    <div class="album thumb" style="background-image: url(./img/am.jpg);">
+                        <div class="album-text">
+                            <h4>AM</h4>
+                        </div>
+                        <a href="https://open.spotify.com/album/41vPD50kQ7JeamkxQW7Vuy?si=xCB6q0UqTxS6omQQ9O1LnA" target="_blank"><img src="img/spotify_button.png" alt=""></a>
+                    </div>
+                    <div class="album thumb last" style="background-image: url(./img/tranquility.jpg);">
+                        <div class="album-text">
+                            <h4>Tranquility Base Hotel & Casino</h4>
+                        </div>
+                        <a href="https://open.spotify.com/album/1jeMiSeSnNS0Oys375qegp?si=1GgRNcjtSzWHBGvA1fJUOQ" target="_blank"><img src="img/spotify_button.png" alt=""></a>
                     </div>
                 </div>
-                <div class="album-thumb">
-                    <img src="./img/am.jpg" alt="Tapa de disco">
-                    <div class="album-hover">
-                        <h4>AM</h4>
-                        <span>2013</span>
-                    </div>
-                </div>
+
             </div>
         </section>
 
         <section id="news">
             <div class="container">
-                <div class="title-box">
-                    <h2 class="title">Ultimo album</h2>
+                <div class="title-box beige">
+                    <h2 class="title">Último álbum</h2>
+                    <p><span>Tranquility Base Hotel & Casino</span> es el sexto álbum de estudio de la banda, lanzado el 11 de mayo de 2018.</p>
                 </div>
-                <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX1A0PcRHdJVf" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
+                <iframe src="https://open.spotify.com/embed/album/1jeMiSeSnNS0Oys375qegp" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <div class="thumb" style="background-image: url(./img/tranquility-ps.jpg);"></div>
             </div>
         </section>
 
-        <section>
-            <div class="title-box">
-                <h2 class="title">instagram</h2>
+        <section id="gallery">
+            <div class="container">
+                <div class="title-box">
+                    <h2 class="title">Galeria de fotos</h2>
+                </div>
+
+                <div class="box-gallery">
+                    <div id="image" class="thumb"><img src="./img/g-1.jpg" border="0" /></div><br>
+                    <a href="#" rel="./img/g-1.jpg" class="image"><img src="./img/g-1-m.jpg" class="mini thumb" border="0" /></a>
+                    <a href="#" rel="./img/g-2.jpg" class="image"><img src="./img/g-2-m.jpg" class="mini thumb" border="0" /></a>
+                    <a href="#" rel="./img/g-3.jpg" class="image"><img src="./img/g-3-m.jpg" class="mini thumb" border="0" /></a>
+                    <a href="#" rel="./img/g-4.jpg" class="image"><img src="./img/g-4-m.jpg" class="mini thumb" border="0" /></a>
+                    <a href="#" rel="./img/g-5.jpg" class="image"><img src="./img/g-5-m.jpg" class="mini thumb" border="0" /></a>
+                    <a href="#" rel="./img/g-6.jpg" class="image"><img src="./img/g-6-m.jpg" class="mini thumb" border="0" /></a>
+                </div>
             </div>
         </section>
 
 
         <section id="newsletter">
             <div class="container">
-                <h4>Newsletter</h4>
-                <form>
-                    <input type="reset">
-                    <input type="submit">
-                </form>
+                <div class="left">
+                    <h2>Suscribite al newsletter para recibir las ultimas novedades</h2>
+                </div>
+                <div class="right">
+                    <form class="subscription" action="#">
+                        <input type="email" name="EMAIL" placeholder="Escribi tu email" required="">
+                        <button type="submit">Subscribir</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
 
     <footer id="site-footer">
-        <span>Banda - 2018</span>
-        <a href="termofuse.html">Term of use</a>
-        <span>Band name</span>
+        <div class="container">
+            <a href="#home"><img src="./img/logo-footer.png" alt="Arctic Monkeys"></a>
+
+            <ul class="social">
+                <li><a href="http://smarturl.it/ArcticFB" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="http://smarturl.it/ArcticTW" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="http://smarturl.it/ArcticIN" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="http://smarturl.it/ArcticSP" target="_blank"><i class="fab fa-spotify"></i></a></li>
+                <li><a href="https://smarturl.it/ArcticYT" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <div class="footer-info">
+                <span>Copyright © 2018, Arctic Monkeys.</span>
+                <span>All Right Reserved</span>
+                <a href="termofuse.html"><span>Term of use</span></a>
+            </div>
+        </div>
     </footer>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/app.min.js"></script>
 </body>
 
 </html>

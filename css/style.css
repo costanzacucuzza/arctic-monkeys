@@ -167,6 +167,7 @@ body {
 * {
   color: #fff;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1.6rem;
   padding: 0; }
@@ -381,8 +382,14 @@ ol {
     #band-info .item-info ul li {
       font-size: 1.6rem; }
   #discography .albums .album {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 30rem;
     width: 30.5%;
@@ -390,8 +397,14 @@ ol {
     #discography .albums .album .album-text {
       padding: 50px;
       height: 30rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center; }
       #discography .albums .album .album-text h4 {
         padding: 0.5rem 0.3rem 0;
@@ -402,6 +415,8 @@ ol {
       z-index: 997;
       width: 100%;
       height: 100%;
+      -webkit-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
       transition: all 2s ease-in-out; }
       #discography .albums .album a img {
         height: 3.5rem;
@@ -440,14 +455,23 @@ header {
   width: 100%;
   color: #fff;
   padding: 2rem 5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(transparent));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, transparent 100%); }
   header h1 {
     float: left;
     color: #fff;
     cursor: pointer;
     font-size: 4.5rem;
-    transition: transform 0.3s ease; }
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
     header h1:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
       transform: scale(1.2);
       color: #a4a09b; }
 
@@ -480,6 +504,7 @@ header {
             .menu-header .nav-header ul li a:hover:before {
               visibility: visible;
               -webkit-transform: scaleX(1);
+              -ms-transform: scaleX(1);
               transform: scaleX(1); }
           .menu-header .nav-header ul li a:before {
             content: "";
@@ -491,8 +516,10 @@ header {
             background-color: #d9d9d9;
             visibility: hidden;
             -webkit-transform: scaleX(0);
+            -ms-transform: scaleX(0);
             transform: scaleX(0);
             -webkit-transition: all 0.3s ease-in-out 0s;
+            -o-transition: all 0.3s ease-in-out 0s;
             transition: all 0.3s ease-in-out 0s; }
   .menu-header .social {
     float: right;
@@ -561,9 +588,16 @@ header {
   overflow: hidden;
   margin: auto;
   margin-bottom: 1.5rem;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
   .member-image .text {
     position: absolute;
@@ -600,21 +634,34 @@ header {
   width: 5rem;
   cursor: pointer;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   margin: 3rem;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54);
   opacity: 1;
   position: fixed;
   bottom: 0;
   right: 0;
-  transition: transform 0.3s ease; }
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
   .arrow-up i {
     color: grey; }
   .arrow-up:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
     opacity: 0.9; }
 
@@ -644,12 +691,14 @@ header {
     #gallery .box-gallery #image {
       display: inline-block;
       margin-bottom: 1.5rem;
+      -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54);
       box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54); }
     #gallery .box-gallery a {
       display: inline-block; }
       #gallery .box-gallery a .mini {
         width: 9rem;
         height: 9rem;
+        -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54);
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54); }
         #gallery .box-gallery a .mini:hover {
           opacity: 0.9; }
@@ -691,6 +740,7 @@ header {
     float: left;
     height: 15rem;
     width: 100%;
+    -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54);
     margin: 0.5rem; }
     #discography .albums .album .album-text {
@@ -703,6 +753,8 @@ header {
       z-index: 900;
       height: 15rem;
       width: 100%;
+      -webkit-transition: background-color 1s ease-in-out;
+      -o-transition: background-color 1s ease-in-out;
       transition: background-color 1s ease-in-out;
       font-family: "Montserrat", sans-serif; }
       #discography .albums .album .album-text h4 {
@@ -712,6 +764,8 @@ header {
         line-height: 130%;
         color: #fbfbfb;
         text-align: left;
+        -webkit-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out; }
     #discography .albums .album.last {
       margin-right: 0; }
@@ -720,6 +774,8 @@ header {
       z-index: 997;
       width: 100%;
       height: 100%;
+      -webkit-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
       transition: all 2s ease-in-out; }
       #discography .albums .album a img {
         display: block;
@@ -731,9 +787,16 @@ header {
 
 #site-footer {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-line-pack: center;
   align-content: center;
   background-color: #000; }
   #site-footer:after {
@@ -807,6 +870,24 @@ header {
       outline: none;
       font-family: "Montserrat", sans-serif;
       font-size: 1.5rem; }
+      #newsletter .right form input::-webkit-input-placeholder,
+      #newsletter .right form button::-webkit-input-placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fff;
+        opacity: 1;
+        /* Firefox */ }
+      #newsletter .right form input:-ms-input-placeholder,
+      #newsletter .right form button:-ms-input-placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fff;
+        opacity: 1;
+        /* Firefox */ }
+      #newsletter .right form input::-ms-input-placeholder,
+      #newsletter .right form button::-ms-input-placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fff;
+        opacity: 1;
+        /* Firefox */ }
       #newsletter .right form input::placeholder,
       #newsletter .right form button::placeholder {
         /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -968,8 +1049,14 @@ header {
     #band-info .item-info ul li {
       font-size: 1.6rem; }
   #discography .albums .album {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 30rem;
     width: 30.5%;
@@ -977,8 +1064,14 @@ header {
     #discography .albums .album .album-text {
       padding: 50px;
       height: 30rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center; }
       #discography .albums .album .album-text h4 {
         padding: 0.5rem 0.3rem 0;
@@ -989,6 +1082,8 @@ header {
       z-index: 997;
       width: 100%;
       height: 100%;
+      -webkit-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
       transition: all 2s ease-in-out; }
       #discography .albums .album a img {
         height: 3.5rem;
